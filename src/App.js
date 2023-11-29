@@ -5,6 +5,7 @@ import TodoList from "./components/ToDoList/ToDoList";
 import {store} from "./redux/store";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
+
 import './App.css';
 import NoteForm from "./components/NoteForm/NoteForm";
 import NoteList from "./components/NoteList/NoteList";
@@ -17,7 +18,7 @@ function App() {
       <Provider store={store}>
         <BrowserRouter>
         <Routes>
-          <Route path="" element={<Home />}>
+          <Route path="/" element={<Home />}>
             
           </Route>
           <Route path="todo"
